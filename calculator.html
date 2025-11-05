@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculater</title>
+    <link rel="stylesheet" href="styles.css" />
+   <script src="script.js" defer></script>
+    
+  </head>
+  <body style="background-color:lightyellow">
+    <div style="font-size:28px;color:red;background-color:lightblue;">Calculater</div>
+    <div  class="Calculater">
+      <div><input type="text" id="myinput" class="display"></div>
+
+      <div class="buttons">
+        
+     <div>
+        <button data-value="%" onclick="setValue(this.dataset.value)">%</button>
+        <button onclick="clearvalue()">CE</button>
+        <button onclick="clearvalue()">C</button>
+        <button onclick="oneremove()">X</button>
+      </div>
+      <div>
+        <button data-value="7" onclick="setValue(this.dataset.value)">7</button>
+        <button data-value="8" onclick="setValue(this.dataset.value)">8</button>
+        <button data-value="9" onclick="setValue(this.dataset.value)">9</button>
+        <button data-value="/" onclick="setValue(this.dataset.value)">÷</button>
+      </div>
+        <div>
+        <button data-value="4" onclick="setValue(this.dataset.value)">4</button>
+        <button data-value="5" onclick="setValue(this.dataset.value)">5</button>
+        <button data-value="6" onclick="setValue(this.dataset.value)">6</button>
+        <button data-value="*" onclick="setValue(this.dataset.value)">x</button>
+      </div>
+        <div>
+        <button data-value="1" onclick="setValue(this.dataset.value)">1</button>
+        <button data-value="2" onclick="setValue(this.dataset.value)">2</button>
+        <button data-value="3" onclick="setValue(this.dataset.value)">3</button>
+        <button data-value="-" onclick="setValue(this.dataset.value)">-</button>
+      </div>
+        <div>
+        <button data-value="-" onclick="setValue(this.dataset.value)">+/-</button>
+        <button data-value="0" onclick="setValue(this.dataset.value)">0</button>
+        <button data-value="." onclick="setValue(this.dataset.value)">.</button>
+        <button onclick="calculate()">=</button>
+      </div>
+    </div> </div>
+    
+    
+    
+    
+  </body>
+</html>
